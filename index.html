@@ -9,19 +9,24 @@ body {
   background: #0a0a0a;
   color: #e6e6e6;
   font-family: Arial;
-  line-height: 1.8;
+  overflow-x: hidden;
 }
 
+/* ORTA WIKI BLOK */
 .container {
-  max-width: 900px;
+  max-width: 850px;
   margin: auto;
-  padding: 60px 30px;
+  padding: 70px 30px;
+  line-height: 1.8;
+  position: relative;
+  z-index: 2;
 }
 
+/* BAŞLIK */
 h1 {
   text-align: center;
   color: crimson;
-  font-size: 42px;
+  font-size: 44px;
   letter-spacing: 2px;
 }
 
@@ -32,18 +37,52 @@ h2 {
   padding-left: 12px;
 }
 
+/* PARAGRAF */
 p {
   text-align: justify;
   font-size: 16px;
   opacity: 0.95;
 }
 
-.quote {
-  font-style: italic;
-  color: #bfbfbf;
-  border-left: 3px solid #444;
-  padding-left: 15px;
-  margin: 20px 0;
+/* SOL KAN */
+.blood-left {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 180px;
+  height: 100%;
+  background: url('blood.png.PNG') no-repeat;
+  background-size: contain;
+  pointer-events: none;
+  opacity: 0.9;
+  z-index: 1;
+}
+
+/* SAĞ KAN (ters çevrilmiş) */
+.blood-right {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 180px;
+  height: 100%;
+  background: url('blood.png.PNG') no-repeat;
+  background-size: contain;
+  transform: scaleX(-1);
+  pointer-events: none;
+  opacity: 0.9;
+  z-index: 1;
+}
+
+/* HAFİF ATMOSFER PARAZİT */
+.fog {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(255,0,0,0.05), transparent 60%);
+  pointer-events: none;
+  z-index: 0;
 }
 </style>
 
@@ -51,248 +90,145 @@ p {
 
 <body>
 
+<div class="fog"></div>
+
+<div class="blood-left"></div>
+<div class="blood-right"></div>
+
 <div class="container">
 
 <h1>KISS N DESTROY</h1>
 
-<p class="quote">
-“Bazı yerler haritadan silinmez… sadece unutulur.”
+<p>
+Isla Isabela is not a place that exists on any modern map.  
+It is a sealed experimental zone erased from global records, hidden behind advanced containment systems and political denial.
 </p>
 
 <p>
-Kiss N Destroy evreni, tek bir olayla başlayan bir hikâye değildir.  
-Bu evren, insanlığın kendi sınırlarını zorlamasıyla başlayan bir zincir reaksiyonun sonucudur.  
-Ve bu zincir, Isla Isabela adı verilen bir adada kırılmıştır.
-</p>
-
-<hr>
-
-<h2>ISLA ISABELA — DENEME DÜNYASI</h2>
-
-<p>
-Isla Isabela, dünya devletlerinin ortak kararıyla oluşturulmuş bir deney alanıdır.  
-Amaç basitti: farklı varlık türlerini bir araya getirerek kontrollü bir ekosistem yaratmak ve gözlemlemek.
+Originally, the island was designed as a controlled ecosystem experiment.  
+Different species, abilities, and existential entities were introduced to observe how a closed world would evolve without external interference.
 </p>
 
 <p>
-Ada, dış dünyadan tamamen izole edilmiştir.  
-Haritalardan silinmiş, çağ üstü savunma sistemleriyle çevrilmiş ve insanlığın erişemeyeceği bir noktaya taşınmıştır.
+But observation always becomes interference.
+</p>
+
+<h2>ISLA ISABELA</h2>
+
+<p>
+Over time, the island stopped behaving like an experiment and started behaving like a world.  
+Factions formed, governments collapsed, and new hierarchies replaced the old order.
 </p>
 
 <p>
-Ancak hiçbir “kontrol” sonsuza kadar sürmez.  
-İlk başta küçük gruplar, sonra denekler, ardından suçlular ve askerler getirildi.  
-Ve zamanla ada bir deney değil… küçük bir dünya haline geldi.
+Humans, vampires, half-vampires, demons, and soul-based entities were forced into the same evolving system.  
+Conflict was not an accident — it became the mechanism of evolution itself.
+</p>
+
+<h2>VAMPIRES & HALF-VAMPIRES</h2>
+
+<p>
+Vampires were once apex entities capable of erasing soul-based life forms entirely.  
+To preserve balance, their power was artificially reduced through large-scale experimentation.
 </p>
 
 <p>
-Bu dünya artık ne insanlara ne de tanrılara aitti.  
-Kendi kurallarını yazan bir organizma gibi büyüyordu.
+The result was the creation of half-vampires — beings closer to humanity but still carrying dangerous regenerative and combat traits.
 </p>
 
-<hr>
-
-<h2>DENGENİN ÇÖKÜŞÜ</h2>
+<h2>DEMONS</h2>
 
 <p>
-Başlangıçta amaç gözlemdi.  
-Ama gözlemleyenler, zamanla kontrol etmeye başladı.
+Demons rarely manifest within the human plane.  
+When they do, their presence is less physical and more conceptual — a disruption in reality rather than a direct entity.
 </p>
 
-<p>
-Güç dengesi bozulduğunda, adanın içinde yeni fraksiyonlar oluştu:  
-askeri yapılar, isyancı gruplar, yağmacılar ve sistem karşıtı topluluklar.
-</p>
+<h2>SOUL SYSTEM & BLACK SMOKE</h2>
 
 <p>
-Fakat en tehlikelisi, bu düzenin içinde yaşayan varlıkların kendileriydi.
+When living beings die, their essence does not disappear.  
+Under certain conditions, these souls merge and condense into a phenomenon known as Black Smoke.
 </p>
 
 <p>
-Çünkü Isla Isabela’da hiçbir şey sadece “insan” değildi.
+Black Smoke is not alive.  
+It is accumulation — consciousness without identity.
 </p>
 
-<hr>
-
-<h2>IRKLAR VE GERÇEKLİĞİN ÇATLAĞI</h2>
-
-<h2>VAMPİRLER</h2>
+<h2>HUNTERS & SUBHUMANS</h2>
 
 <p>
-Bir zamanlar vampirler, ruhları yok edebilecek seviyede mutlak bir güce sahipti.  
-Bu güç, adanın dengesini tamamen tehdit ediyordu.
+Hunters are decentralized response units tasked with eliminating soul-related anomalies.  
+They operate like an emergency network rather than a structured army.
 </p>
 
 <p>
-Bu yüzden bilimsel ve politik müdahalelerle vampirlerin güçleri sınırlandırıldı.  
-Onlardan “yarı vampirler” yaratıldı.
+Subhumans, on the other hand, are the island’s official military enforcement system.  
+Primarily composed of half-vampires, they control urban order, tactical warfare, and internal suppression.
 </p>
 
 <p>
-Bu dönüşüm onları zayıflatmadı.  
-Sadece değiştirdi.
+Hunters investigate. Subhumans erase.
+</p>
+
+<h2>THE MEMORY OF ANGELICA & YAMATO</h2>
+
+<p>
+Some events are not recorded as history. They survive as memory fragments.
 </p>
 
 <p>
-Artık daha insancıl, daha dengeli ama aynı zamanda daha öngörülemezlerdi.
-</p>
-
-<h2>ŞEYTANLAR</h2>
-
-<p>
-Şeytanlar insan dünyasında nadiren görünür.  
-Ama varlıkları, adanın ruhsal dengesini sürekli baskılar altında tutar.
+A crashed military transport marked the beginning of irreversible change.  
+Delta Force operatives were not supposed to survive Isla Isabela — yet some did.
 </p>
 
 <p>
-Onlar gözle görülmez bir tehdit değil…  
-bilinmeyen bir ihtimaldir.
-</p>
-
-<h2>KARA DUMAN</h2>
-
-<p>
-Ölümden sonra ruhlar kaybolmaz.  
-Bazıları birleşir.
+Yamato was not a hunter at the time. He was only a civilian connected to a hunter lineage.  
+His uncle, a half-vampire operative, brought him into the field during the chaos.
 </p>
 
 <p>
-Bu birleşim “Kara Duman” olarak bilinir.  
-Bir bedenin, bir ruhun veya bir şehrin içine sızabilir.
+The encounter with Black Smoke changed everything.
+His uncle fell during the incident, consumed by something that was not fully alive nor fully dead.
 </p>
 
 <p>
-Kara Duman, yalnızca bir varlık değildir.  
-Bir bozulmadır.
-</p>
-
-<hr>
-
-<h2>HUNTERLAR VE SUBHUMANLAR</h2>
-
-<p>
-Hunterlar, ruh vakalarını kontrol etmek için oluşturulmuş dağınık bir ağdır.  
-Ancak sistemleri kusurludur; çünkü insanlar kusurludur.
+Angelica was already there — a soldier from the outside world, forced into adaptation by survival itself.  
+Between collapse and control, she made a choice: to use Yamato as a key.
 </p>
 
 <p>
-Subhuman birimi ise adanın gerçek askeri gücüdür.  
-Çoğunlukla yarı vampirlerden oluşur ve şehir düzenini doğrudan kontrol eder.
+She extracted him from the zone, not as rescue, but as strategy.  
+Later, Yamato was embedded into the Subhuman system under indirect manipulation.
 </p>
 
 <p>
-Hunterlar bir olayı çözmeye çalışırken, Subhumanlar o olayı siler.
+Angelica continued operating in the shadows, navigating between factions, betrayal, and control structures that no longer recognized morality.
 </p>
 
 <p>
-Ve bu iki sistem arasındaki gerilim, adanın görünmeyen savaşını oluşturur.
-</p>
-
-<hr>
-
-<h2>ANILAR — YAMATO VE ANGELICA</h2>
-
-<p class="quote">
-“Bazı karşılaşmalar bir an değildir… bir kırılmadır.”
+Nikolai, the island’s governing authority, still wanted her alive.  
+Not for justice — but for unfinished history.
 </p>
 
 <p>
-Falezlerin kenarında düşen bir uçak, her şeyi değiştirdi.  
-Kargo uçağının içinden çıkan askerler, Isla Isabela’nın gerçek yüzüyle ilk kez karşılaştı.
+And Yamato… never fully understood which side was his own.
+</p>
+
+<h2>END NOTE</h2>
+
+<p>
+Isla Isabela does not produce endings.  
+It only produces transitions between conflicts.
 </p>
 
 <p>
-Yamato o gün henüz bir hunter bile değildi.  
-Sadece amcasının yanında yaşayan bir çocuktu.
-</p>
-
-<p>
-Amcası, tecrübeli bir yarı vampirdi.  
-O gün Yamato’ya “bekle” dedi.
-</p>
-
-<p>
-Ama bazı “beklemeler” insanı hayatta tutmaz.
-</p>
-
-<p>
-Olay yerine ulaştıklarında, Kara Duman çoktan yayılmıştı.  
-İnsan bedenleri artık kendilerine ait değildi.
-</p>
-
-<p>
-Çığlıklar, sessizlikten daha ağırdı.
-</p>
-
-<p>
-Ve Yamato, amcasının yere düştüğünü gördü.
-</p>
-
-<hr>
-
-<p>
-Angelica o an oradaydı.  
-Eski dünyadan gelen bir asker… artık yeni bir dünyanın parçası.
-</p>
-
-<p>
-Amcası ile göz göze geldiklerinde, bir anlaşma sessizce yapıldı.  
-Hayatta kalmak, artık bir seçim değil… bir değişim şartıydı.
-</p>
-
-<p>
-Angelica, Yamato’yu oradan çıkardı.  
-Ama bu kurtuluş bir iyilik değildi.
-</p>
-
-<p>
-Bir araçtı.
-</p>
-
-<p>
-Yamato, Subhuman sistemine sızması için kullanıldı.  
-Angelica ise kendi planlarını gölgelerde kurmaya devam etti.
-</p>
-
-<p>
-Ama hiçbir plan, ihanetin ağırlığını taşıyamaz.
-</p>
-
-<hr>
-
-<p>
-Zaman geçti.  
-Angelica artık kaçak değil, hedefti.
-</p>
-
-<p>
-Nikolai onu canlı istiyordu.  
-Çünkü geçmiş, bazen öldürülmez… geri çağrılır.
-</p>
-
-<p>
-Ve Yamato…
-</p>
-
-<p>
-Henüz hangi tarafın parçası olduğunu bilmiyordu.
-</p>
-
-<hr>
-
-<h2>SON NOT</h2>
-
-<p class="quote">
-“Isla Isabela’da hiçbir hikâye bitmez.  
-Sadece bir sonraki çatışmaya kadar sessizleşir.”
-</p>
-
-<p>
-Çünkü bu ada, insanlığın ne olduğunu değil…  
-insanlığın neye dönüşebileceğini gösterir.
+Because this island is not about survival.
+It is about transformation.
 </p>
 
 </div>
 
 </body>
 </html>
+
